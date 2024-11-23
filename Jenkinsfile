@@ -2,6 +2,19 @@ pipeline {
     agent any  // Run on any available Jenkins agent
     stages {
 
+        stage('Verify Python') {
+            steps {
+                bat 'python --version'
+            }
+        }
+
+        stage('Verify Pip') {
+            steps {
+                bat 'pip --version'
+            }
+        }
+
+
         stage('Debug PATH') {
             steps {
                 bat 'echo %PATH%'
