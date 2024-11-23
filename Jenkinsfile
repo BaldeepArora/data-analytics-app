@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    sh 'pip install -r requirements.txt'
+                    bat 'pip install -r requirements.txt'
                 }
             }
         }
@@ -12,7 +12,7 @@ pipeline {
             steps {
                 script {
                     // Run tests using pytest
-                    sh 'pytest tests/'
+                    bat 'pytest tests/'
                 }
             }
         }
@@ -27,7 +27,7 @@ pipeline {
             steps {
                 script {
                     // Deploy application using kubectl
-                    sh 'kubectl apply -f k8s/deployment.yaml'
+                    bat 'kubectl apply -f k8s/deployment.yaml'
                 }
             }
         }
