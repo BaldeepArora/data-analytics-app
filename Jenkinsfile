@@ -1,10 +1,18 @@
 pipeline {
     agent any  // Run on any available Jenkins agent
     stages {
+
+        stage('Debug PATH') {
+            steps {
+                bat 'echo %PATH%'
+            }
+        }
+ 
+
         stage('Build') {
             steps {
                 script {
-                    bat 'C:\\Users\\balde\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pip.exe install -r requirements.txt'
+                    bat 'pip install -r requirements.txt'
                 }
             }
         }
