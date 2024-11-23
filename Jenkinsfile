@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    bat 'pip install -r requirements.txt'
+                    bat 'C:\\Users\\balde\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pip install -r requirements.txt'
                 }
             }
         }
