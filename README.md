@@ -80,7 +80,7 @@ cd data-analytics-app
 ```bash
 pip install -r requirements.txt
 ```
-### 3.  Run the Application Locally
+3.  Run the Application Locally
 
 1. Start the Flask application:
 ```bash
