@@ -44,6 +44,13 @@ pipeline {
                 }
             }
         }
+        
+        stage('Verify Kubernetes Auth') {
+            steps {
+                bat 'kubectl get nodes'
+            }
+        }
+
         stage('Deploy to Minikube') {
             steps {
                 script {
