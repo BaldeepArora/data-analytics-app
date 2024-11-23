@@ -77,16 +77,16 @@ cd data-analytics-app
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
 2. Install dependancies
-```bash
-pip install -r requirements.txt
-```
-3.  Run the Application Locally
+  ```bash
+  pip install -r requirements.txt
+  ```
+### 3.  Run the Application Locally
 
-1. Start the Flask application:
-```bash
-python src/app.py
-```
-2. Access the application in your browser at http://127.0.0.1:5000.
+  1. Start the Flask application:
+    ```bash
+    python src/app.py
+    ```
+  2. Access the application in your browser at http://127.0.0.1:5000.
 
 ---
 
