@@ -1,5 +1,11 @@
 pipeline {
     agent any  // Run on any available Jenkins agent
+
+    environment {
+    KUBECONFIG = 'C:\\ProgramData\\Jenkins\\.jenkins\\.minikube\\config'
+    }
+
+
     stages {
 
         stage('Verify Python') {
